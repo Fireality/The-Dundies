@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<script src="p5.js"> </script>
+
+</head>
+<body>
+<script id="script" type="text/javascript">
+var x;
+function setup() 
+{ 
+createCanvas(displayWidth, displayHeight);
+background(0);
+x=0;
+}
+
+function draw (){
+scale(1.5); 
+
+background(69, 164, 247);
+noStroke(); 
+fill(89, 89, 78);
+rect(0,200,displayWidth,200);
+fill(0, 0, 0);
+rect(0,250,displayWidth,100);
+strokeWeight(5); 
+stroke(247, 255, 20);
+line(19,300,47,300);
+line(79,300,110,300);
+line(174,300,138,300);
+line(252,300,206,300);
+strokeWeight(2);
+stroke(255, 0, 0);
+fill(255, 0, 0);
+rect(83+x,281,71,49);
+fill(51, 0, 0);
+ellipse(83+x,330,20,20);
+ellipse(153+x,330,20,20);
+noStroke(); 
+fill(255);
+ellipse(116-x,70,50,50);
+ellipse(79-x,57,50,50);
+ellipse(104-x,28,50,50);
+ellipse(142-x,40,50,50);
+
+ellipse(316-x,120,50,50);
+ellipse(279-x,107,50,50);
+ellipse(304-x,78,50,50);
+ellipse(342-x,90,50,50);
+x++;
+}
+</script>
+</body>
+</html>
