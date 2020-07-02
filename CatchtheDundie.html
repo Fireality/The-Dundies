@@ -7,21 +7,21 @@
 <body>
 <script id="script" type="text/javascript">
 var x;
-var img; 
 function setup() 
 { 
 createCanvas(displayWidth, 300);
 background(0);
 x=0;
-img = loadImage('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.co.uk%2Fpin%2F297870962852942531%2F&psig=AOvVaw3GkfhJeKggiz2ZFFlpcfE3&ust=1593809275395000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjShcK4r-oCFQAAAAAdAAAAABAX');
 }
 
 function draw (){
 scale(1.5); 
-
 background(69, 164, 247);
 noStroke(); 
-image(img, 5+x, 50, 25,90);
+fill(255, 247, 28);
+ellipse(65+x,50,50,100);
+fill(84, 61, 33); 
+rect(5+x,100,125,50);
 x++;
 }
 
